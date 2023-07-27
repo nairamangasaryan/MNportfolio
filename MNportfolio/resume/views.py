@@ -25,7 +25,7 @@ def home(request):
         form = MassageForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect("/#contact")
+            return redirect("{% url 'home'%}")
 
     skills = Skill.objects.all()
     educations = Education.objects.all()
