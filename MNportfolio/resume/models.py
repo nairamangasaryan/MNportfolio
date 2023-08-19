@@ -93,7 +93,7 @@ class Language(models.Model):
 
 
 class HardSkill(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=100)
     created_on = models.DateTimeField(auto_now=True)
 
     def __str__(self) -> str:
@@ -101,7 +101,7 @@ class HardSkill(models.Model):
 
 
 class SoftSkill(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=100)
     created_on = models.DateTimeField(auto_now=True)
 
     def __str__(self) -> str:
